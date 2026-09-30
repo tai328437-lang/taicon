@@ -1,0 +1,22 @@
+import { Route, Routes } from "react-router-dom"
+import Nav from "./components/Nav"
+import Help from "./pages/Help"
+import About from "./pages/About"
+
+
+
+function App() {
+  return (
+    <div>
+      <Nav />  
+      <br />
+
+      <Routes>
+        <Route path="/help" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        
+      </Routes>
+    </div>
+  )
+}
+export default App
